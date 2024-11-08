@@ -96,6 +96,10 @@ table td ul {
   list-style-type:disc;
 }
 
+table td li {
+  padding:4px;
+}
+
 th{
   color: white;
   font-size: 2rem;
@@ -141,9 +145,9 @@ td {
   flex-direction:column;
 }
 .overview{
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  max-width:1200px;
+  margin:0 auto;
+  width:100%;
 }
 .overview p {
   font-size: 1.5rem;
@@ -156,8 +160,9 @@ td {
   color: white;
   text-align: center;
   text-decoration: none;
-  -webkit-text-stroke: 0.5px #4a310a96;
-  border-radius: 5px;
+  -webkit-text-stroke: 2px #4a310ae3;
+  border-radius: 8px;
+  border:2px solid #4a310ad0;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -178,3 +183,42 @@ td {
   max-width: 800px;
   object-fit: cover;
 }
+
+.view-link{
+  display: inline-block;
+  padding: 10px 20px;
+  margin:24px;
+  background-color: #ffb13400; 
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  -webkit-text-stroke: 2px #4a310a;
+  border:2px solid #4A310A;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.view-link:hover {
+  background-color: #ffcc7a; 
+  color:white;
+}
+
+.summary {
+  max-width:900px;
+  margin:0 auto;
+  width:100%;
+}
+
+.summary ul {
+  padding:16px;
+  padding-left:0;
+  text-align:left;
+}
+
+.summary li {
+  font-size:1.5rem;
+  padding-left:1.5rem;
+  padding:8px;
+}
+
