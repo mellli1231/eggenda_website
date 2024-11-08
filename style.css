@@ -6,126 +6,175 @@
     line-height: 1.5;
   }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+    padding-top:60px;
     background-color:#FFEBCC;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    min-height: 100vh; /* Ensures body takes up full viewport height */
-    margin: 0; /* Removes default body margin */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
 }
-  .header {
-    background-color: #FFB034;
-    text-align: center;
-    margin-bottom: 70px;
-  }
 
-  .header h1 {
-    color: white;
-    font-size: 5rem;
-    padding: 60px;
-    text-shadow: 5px 5px 0 #000, -3px -3px 0 #000,
-     3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
-  }
+/*styling headers*/
+.header {
+  background-color: #FFB034;
+  text-align: center;
+  margin-bottom: 70px;
+}
 
-  h2{
-    color: white;
-    font-size: 3rem;
-    -webkit-text-stroke: 1px #4A310A;
-    margin-bottom:24px;
-  }
+.header h1 {
+  color: white;
+  font-size: 5rem;
+  padding: 60px;
+  text-shadow: 5px 5px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
 
-  h3{
-    color: white;
-    font-size: 2.5rem;
-    -webkit-text-stroke: 1px #4A310A;
-    margin-bottom:24px;
-  }
+h2{
+  color: white;
+  font-size: 3rem;
+  -webkit-text-stroke: 1px #4A310A;
+  margin-bottom:24px;
+}
 
-  p {
-    font-size: 1.5rem;
-  }
+h3{
+  color: white;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 1px #4A310A;
+  margin-bottom:24px;
+}
 
-  a {
-    font-size: 1.5rem;
-    color: inherit;
-  }
-  a:hover{
-    color:#4A310A;
-  }
+/*styling text*/
+p {
+  font-size: 1.5rem;
+}
 
-  .overview, .presentation, .team, .journey, .summary, .workDist{
-    display: flex;
-    flex-direction: column;
-    background-color: #FFEBCC;
-    margin: 30px 220px 30px 150px; /*top right bottom left*/
-    padding: 30px 50px 30px 50px;
-    text-align:center;
-  }
+/*styling links*/
+a {
+  font-size: 1.5rem;
+  color: inherit;
+}
+a:hover{
+  color:#4A310A;
+}
 
-  .summary h2 {
-    font-size: 2.5rem;
-  }
+/*apply same style to all div*/
+.overview, .presentation, .team, .journey, .summary, .workDist{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFEBCC;
+  margin: 30px 220px 30px 150px; /*top right bottom left*/
+  padding: 30px 50px 30px 50px;
+  text-align:center;
+  scroll-margin-top:120px;
+}
 
-  ul {
-    list-style-type: disc;
-    margin: 0;
-    padding-left:20px;
+.summary h2 {
+  font-size: 2.5rem;
+}
 
-  }
+/*styling table*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  th{
-    color: white;
-    font-size: 2rem;
-    -webkit-text-stroke: 1px #4A310A;
-  }
+table th, table td {
+  padding: 0px 15px;
+  vertical-align:top;
+  text-align:left;
+}
 
-  td {
-    font-size: 1.2rem;
-  }
+table td ul {
+  padding-left:30px;
+  margin:0;
+  list-style-type:disc;
+}
 
-  /*individual div styling*/
+th{
+  color: white;
+  font-size: 2rem;
+  -webkit-text-stroke: 1px #4A310A;
+}
 
-  .app {
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction:column;
-  }
-  .overview{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .overview p {
-    font-size: 1.5rem;
-  }
+td {
+  font-size: 1.2rem;
+}
 
-  .download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FFB034; /* Green background */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    -webkit-text-stroke: 0.5px #4a310a96;
-    border-radius: 5px;
-    font-size: 2rem;
-    cursor: pointer;
-  }
 
-  .download-button:hover {
-    background-color: #ffcc7a; /* Darker green on hover */
-  }
+/*styling navigation bar*/
+.navbar {
+  position: fixed;
+  top:0;
+  width:100%;
+  background-color: #1B1F31;
+  color: white;
+  padding: 1rem;
+  margin-left:24px;
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .figma-photos {
-    display:flex;
-    justify-content:center;
-    gap:16px;
-  }
+.navbar a {
+  color:white;
+  text-decoration:none;
+  font-size:1.5rem;
+}
 
-  .photo {
-    width: 100%;
-    max-width: 600px;
-    object-fit: cover;
-  }
+.navbar a:hover{
+  color:#b8bfdb;
+}
+
+/*individual div styling*/
+
+/*styling introduction part*/
+.app {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+}
+.overview{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.overview p {
+  font-size: 1.5rem;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFB034; 
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px #4a310a96;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #ffcc7a; 
+}
+
+/*styling photos on figma*/
+.figma-photos {
+  display:flex;
+  justify-content:center;
+  gap:16px;
+}
+
+.photo {
+  width: 100%;
+  max-width: 800px;
+  object-fit: cover;
+}

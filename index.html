@@ -12,12 +12,20 @@
 
 </head>
 <body>
+    <nav class="navbar">
+        <a href="#home">Eggenda</a>
+        <a href="#overview">About</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#team">Team</a>
+        <a href="#journey">Project Designs</a>
+        <a href="#summaries">Summaries</a>
+    </nav>
     <main class = "content">
-        <div class="header">
+        <div id="home" class="header">
             <h1>Eggenda</h1>
         </div>
 
-        <div class="app">
+        <div  class="app">
             <p>some good pitch sentence</p>
             <img src="images/app_icon.png" alt="Eggenda icon">
             
@@ -28,7 +36,7 @@
         </div>
         
          <!--overview includes our introduction, presentations, and download link-->
-        <div class="overview">
+        <div id="overview" class="overview">
             <h2>About</h2>
             <p>Eggenda works to keep you both productive and entertained! 
                 We are not just a normal To-do list app, but you can use your accomplishments to gain
@@ -38,7 +46,7 @@
         </div>
 
     
-        <div class="presentation">
+        <div id="presentations" class="presentation">
             <h2>Presentations</h2>
                 <!--replace the youtube link with our video-->
                 <a href="https://www.youtube.com/watch?v=ZbyxjGE885I" target="_blank">Show and Tell 1</a>
@@ -46,7 +54,7 @@
         </div>
 
         <!--team includes information of each member-->
-        <div class="team">
+        <div id="team" class="team">
             <h2>Our Team</h2>
             <table border="1">
                 <tr>
@@ -61,7 +69,8 @@
                   <td>Game Design</td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Implemented Character Selection</li>
+                        <li>Linked Game Page with Character Selection</li>
                     </ul>
                   </td>
                   <td>
@@ -103,7 +112,9 @@
                   <td>Game Design</td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Created 5 pet sprites</li>
+                        <li>Implemented the circular progress bar in the Home Screen</li>
+                        <li>Implemented the egg hatching process in the Home Screen</li>
                     </ul>
                   </td>
                   <td>
@@ -122,7 +133,9 @@
                   <td>App UI</td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Implemented the Home screen</li>
+                        <li>Added the Activtiy and Layout for the Quests and Tasks</li>
+                        <li>Resolved Merge Conflicts among branches</li>
                     </ul>
                   </td>
                   <td>
@@ -142,7 +155,9 @@
                   <td>App UI</td>
                   <td>
                     <ul>
-                        <li>Website</li>
+                        <li>Developed App Website</li>
+                        <li>Imported fonts</li>
+                        <li>Implemented Settings Page with User Profile and Language Settings</li>
                     </ul>
                 </td>
                   <td>
@@ -161,7 +176,7 @@
         </div>
 
         <!--journey includes screenshots of our work from each presentation-->
-        <div class="journey">
+        <div id="journey" class="journey">
             <h2>Project Designs</h2>
             <div class="diagram">
                 <h3>MVVM Diagram</h3>
@@ -179,7 +194,7 @@
         </div>
 
         <!--summary includes a list of what we implemented for each presentation-->
-        <div class="summary">
+        <div id="summaries" class="summary">
             <div class="pres1">
                 <h2>Show and Tell 1</h2>
                 <!--replace the youtube link with our video-->
@@ -205,7 +220,5 @@
             </div>
         </div>
     </main> 
-    
-    <script src="script.js"></script>
 </body>
 </html>
