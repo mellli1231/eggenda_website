@@ -1,3 +1,4 @@
+/*general styling*/
 *{
     font-family: 'Titan One', sans-serif;
     margin: 0;
@@ -7,7 +8,11 @@
 
 body {
     background-color:#FFEBCC;
-    /*backgroun-color: */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 100vh; /* Ensures body takes up full viewport height */
+    margin: 0; /* Removes default body margin */
 }
   .header {
     background-color: #FFB034;
@@ -17,7 +22,7 @@ body {
 
   .header h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 60px;
     text-shadow: 5px 5px 0 #000, -3px -3px 0 #000,
      3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
@@ -25,18 +30,102 @@ body {
 
   h2{
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     -webkit-text-stroke: 1px #4A310A;
+    margin-bottom:24px;
   }
 
-  .overview, .team, .journey, .summary, .workDist{
+  h3{
+    color: white;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1px #4A310A;
+    margin-bottom:24px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+    color: inherit;
+  }
+  a:hover{
+    color:#4A310A;
+  }
+
+  .overview, .presentation, .team, .journey, .summary, .workDist{
     display: flex;
     flex-direction: column;
     background-color: #FFEBCC;
-    margin: 30px 50px 30px 50px;
-    padding: 30px;
+    margin: 30px 220px 30px 150px; /*top right bottom left*/
+    padding: 30px 50px 30px 50px;
+    text-align:center;
   }
 
-  .summar h2 {
+  .summary h2 {
+    font-size: 2.5rem;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left:20px;
+
+  }
+
+  th{
+    color: white;
     font-size: 2rem;
+    -webkit-text-stroke: 1px #4A310A;
+  }
+
+  td {
+    font-size: 1.2rem;
+  }
+
+  /*individual div styling*/
+
+  .app {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+  }
+  .overview{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .overview p {
+    font-size: 1.5rem;
+  }
+
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFB034; /* Green background */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px #4a310a96;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .download-button:hover {
+    background-color: #ffcc7a; /* Darker green on hover */
+  }
+
+  .figma-photos {
+    display:flex;
+    justify-content:center;
+    gap:16px;
+  }
+
+  .photo {
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
   }
