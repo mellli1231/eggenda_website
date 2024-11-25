@@ -59,6 +59,11 @@
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>Show and tell 1</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PGhN2mRHcQI?si=DP7ozLXp4CKxw6LS" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Show and tell 2</p>
             </div>
         </div>
 
@@ -88,13 +93,12 @@
                         <li>Gallery Implementation : Selection of Pets and show pet info by long click</li>
                         <li>Character and Monster Dialog Info + Mechanics</li>
                         <li>Game Start Page Implementation</li>
-                        <li>Monster abnd Pet Selection UI</li>
+                        <li>Monster and Pet Selection UI</li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                        <li>Gallery Sorting Function</li>
-                        <li>UI improvement</li>
+                        <li>details</li>
                     </ul>
                   </td>
                   
@@ -140,7 +144,10 @@
                   </td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Draw 5 new pet sprites</li>
+                        <li>Added the 5 new pets as obtainable and playable pets</li>
+                        <li>Added extra functionalities to the tasks listed in the quest board: Countdown timer for time remaining for quest, checkbox</li>
+                        <li>XML changes and minor task entry database changes</li>
                     </ul>
                   </td>
                   <td>
@@ -161,8 +168,12 @@
                   </td>
                   <td>
                     <ul>
-                        <li>details</li>
-                    </ul>
+                        <li>Created the layout and implemented the quest baord to display saved quests in the Home Fragment</li>
+                        <li>Added tasks show up in the confirm task/quest activity's list view</li>
+                        <li>Implemented adding, editing, and deletion of quests with empty input checks</li>
+                        <li>Implemented the task entry database, schema migration, and foreign key</li>
+                      
+                      </ul>
                   </td>
                   <td>
                     <ul>
@@ -209,6 +220,15 @@
                 <br>
                 <a href="https://drive.google.com/file/d/1lVamYXlX0JxlbccysXXP61iLD1bmIosA/view?usp=sharing" target="_blank" class="view-link">View MVVM Diagram</a>
             </div>
+            <br>
+
+            <div class="diagram">
+              <h3>Threaded Design Diagram</h3>
+              <img src="images/threadeddiagram.png" alt="Threaded Design Diagram" class="photo">
+              <br>
+              <a href="https://drive.google.com/file/d/1u1JterZDg9C0hEv9lHTJZT3xSzyCux6n/view?usp=sharing" target="_blank" class="view-link">View Threaded Design Diagram</a>
+          </div>
+          <br>
 
             <div class="figma">
                 <h3>Figma App Layout</h3>
@@ -232,21 +252,31 @@
                    also needs the user to develop strategies and presents difficulties, allowing for a challenging but fun battle.</li>
                   </ul>
                 <br>
-                <h3>Plans for Show and Tell 2</h3>
-                <ul>
-                  <li>implement a database SQLite for storing data</li>
-                  <li>add instructions for the user to easily understand the game</li>
-                  <li>add pet info dialogues </li>
-                  <li>add even more sprites and pets to expand our game.</li>
-                  <li> implement our user profile by allowing for log in, log out, and displaying user information in various fragments.</li>
-                  <li>implement GPS tracking and step counter to gain points for egg hatching.</li>
-                </ul>
             </div>
 
             <div class="pres2">
-                <h2>Show and Tell 2</h2>
-                <p>Summary</p>
-                <p>plans for final</p>
+               <h3>Show and Tell 2</h3>
+                <p>In Show and Tell 2, we were able to implement the app's databases, game implementation, tasks/quests.</p>
+                <ul>
+                  <li>Home page: Implement adding/editing/deleting tasks and quests along with countdown timers and checkbox features</li>
+                  <li>Game: NEED HELP HERE, Implement gallery page UI, along with pet selection, monster stages. </li>
+                  <li>Task entry database: Store tasks entered by user to room database to keep track of all tasks</li>
+                  <li>User database: Store users in room database and firebase database to sync user data between devices </li>
+                  <li>Login/Create account: Allow users to login to a previously created account or create a new account to the database</li>
+                </ul>
+
+                <h3>Plans for final presentation</h3>
+                <ul>
+                  <li>Add information including for bosses, sort/filtering functions</li>
+                  <li>Display top users with the most gained xp from completing tasks</li>
+                  <li>Add backgrounds for pets, boss sprites</li>
+                  <li>Notification when 10 minutes are left for tasks, and to group tasks together by quests</li>
+                  <li>Add music that changes between different parts of the app</li>
+                  <li>Gain exp from completed quests/tasks to egg hatching, rarity of different pets, different randomness for which pets and be hatched</li>
+                  <li>Set up database to not require foreign key</li>
+                  <li>Add tutorial for game, slide show or interactive and make more game stages</li>
+                  <li>Save the shortest turns spend for each stage</li>
+                </ul>
             </div>
 
             <div class="final">
