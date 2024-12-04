@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
 
+
 </head>
 <body>
     <nav class="navbar">
@@ -25,47 +26,77 @@
             <h1>Eggenda</h1>
         </div>
 
+
         <div  class="app">
             <p>Power through your tasks, power up your game!</p>
-            <img src="images/app_icon.png" alt="Eggenda icon"> 
-            
+            <img src="images/app_icon.png" alt="Eggenda icon">
+           
             <!--replace the file with our apk-->
             <a href="/app/Eggenda.apk" download class="download-button">Download Eggenda</a>
             <br>
             <a href="https://github.com/mellli1231/Eggenda" target="_blank" class="view-link">Github Code</a>
         </div>
-        
+       
          <!--overview includes our introduction, presentations, and download link-->
         <div id="overview" class="overview">
             <h2>About</h2>
-            <p>Eggenda keeps you productive and entertained! 
-              More than just a to-do list app, it rewards your accomplishments with points to level up and unlock characters, pets, and accessories. 
+            <p>Eggenda keeps you productive and entertained!
+              More than just a to-do list app, it rewards your accomplishments with points to level up and unlock characters, pets, and accessories.
               This fun reward system motivates you to complete tasks quickly and stay engaged.
             </p>
 
+
             <h2> Why Eggenda ? </h2>
-            <p> This is the frist app introducing todolist - game app to users. </p>
+            <p> This is the first app introducing todolist - game app to users. </p>
             <p> The very first app that can make WORK-LIFE BALANCE, if you are tired to finish the task,
 go play some fun games to relax! </p>
             <p> When you do task for a long time, go for a walk,this could help you hetch an egg too! Do not just sit infront of the desk!</p>
             <p> </p>
         </div>
 
-    
+
+        <div class="overview">
+          <h3>Want to learn more about how we implemented our app? Here is our zip!</h3>
+          <a href="/app/Group20_Eggenda.zip" download class="download-button">Download Zip Folder</a>
+        </div>
+
+
+   
         <div id="presentations" class="presentation">
             <h2>Presentations</h2>
                 <!--replace the youtube link with our video-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2j0cdqn5t9E?si=jtEXCJI3V0B097K-" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                <p>Pitch</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hLX6-2VyVC8?si=0aDpLd96vhEMSSU-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <div class="videos">
+                  <div class="vid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2j0cdqn5t9E?si=jtEXCJI3V0B097K-"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>Show and tell 1</p>
+                  </div>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PGhN2mRHcQI?si=DP7ozLXp4CKxw6LS" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
+                  <div class="vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PGhN2mRHcQI?si=DP7ozLXp4CKxw6LS"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>Show and tell 2</p>
+                  </div>
+                 
+
+
+                  <div class="vid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hLX6-2VyVC8?si=0aDpLd96vhEMSSU-"
+                                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  <p>Final Presentation</p>
+                  </div>
+               
+                </div>  
             </div>
         </div>
+
 
         <!--team includes information of each member-->
         <div id="team" class="team">
@@ -98,12 +129,20 @@ go play some fun games to relax! </p>
                   </td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Implemented Game Gallery and UI design </li>
+                       
+                          <li>Implemented the data visualization, UI design of Stage choose </li>
+                         
+                          <li>Implement the whole pet choose: Data visualization, function, UI design </li>
+                         
+                          <li>Tutorial: UI design, implementation </li>
+                         
+                          <li>Implementation of SharePrefManager: A general class to store all the game data in the app</li>
                     </ul>
                   </td>
-                  
-                  
-                  
+                 
+                 
+                 
                 </tr>
                 <tr>
                     <td>Hiu Leung Arthur Lam</td>
@@ -118,19 +157,24 @@ go play some fun games to relax! </p>
                   <td>
                     <ul>
                         <li>Game implementation: UI design, mechanism, animate effect</li>
-                        <li>Basic Format of pet and stages: design classes that are easy 
+                        <li>Basic Format of pet and stages: design classes that are easy
                           for the developers to add/modify pets and stages in the future</li>
-                        <li>Design and implement the mechanism of each pets and stages: make sure the pets works as description in the game, and make sure 
+                        <li>Design and implement the mechanism of each pets and stages: make sure the pets works as description in the game, and make sure
                           that the gimmick of each stages works properly </li>
-                        
+                       
                     </ul>
                   </td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Implemented the game: All the loops mechanism and UI design</li>
+                        <li>Implemented the Pets: skill idea and implementation of the skills</li>
+                        <li>Modular design for Pet class, stage class, tutorial class, allow easy future modification
+                        </li>
+                        <li>Implementation of Tutorial and design the content </li>
                     </ul>
                   </td>
                 </tr>
+
 
                 <tr>
                   <td>Nelson Mincheng Fang</td>
@@ -152,7 +196,13 @@ go play some fun games to relax! </p>
                   </td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Created Pet sprites and backgrounds</li>
+                        <li>Implemented egg hatching in Home fragment
+                        </li>
+                        <li>Added extra functionality to quests/tasks: crossout w/ checkbox, countdown timer
+                        </li>
+                        <li>Added notifications for when quests/tasks neared deadline and when eggs were ready to hatch: NotifyService, BootReceiver, TaskAlarmReceiver, AlarmManager
+                        </li>
                     </ul>
                   </td>
                 </tr>
@@ -172,16 +222,23 @@ go play some fun games to relax! </p>
                         <li>Added tasks show up in the confirm task/quest activity's list view</li>
                         <li>Implemented adding, editing, and deletion of quests with empty input checks</li>
                         <li>Implemented the task entry database, schema migration, and foreign key</li>
-                      
+                     
                     </ul>
                   </td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Implemented Home, Quest and Task screens as well as their UI design</li>
+                        <li>Set up database to not require foreign key and group tasks by quests</li>
+                        <li>Resolved warnings and cleaned up code
+                        </li>
+                        <li>Gain experience points on completing tasks and quests
+                        </li>
+                        <li>Placed list view updates on UI threads
+                        </li>
                     </ul>
                   </td>
                 </tr>
-                
+               
                 <tr>
                   <td>Melody Li</td>
                   <td>App UI</td>
@@ -198,47 +255,75 @@ go play some fun games to relax! </p>
                         <li>Added room database to store user data locally and have immediate changes to the database if offline </li>
                         <li>Implemented login, create account, and create profile page with error checks </li>
                         <li>Completed translation to chinese</li>
-                      
+                     
                     </ul>
                   </td>
                   <td>
                     <ul>
-                        <li>details</li>
+                        <li>Styled overall app: rounded profile picture, settings fragment, launch screen, navigation view, outlined text
+                        </li>
+                        <li>Implemented Ranking Fragment to rank users based on their points</li>
+                        <li>Finalize website
+                        </li>
+                        <li>implementing updated mvvm and threaded design diagram
+                        </li>
                     </ul>
                   </td>
 
+
                 </tr>
-              </table>       
+              </table>      
         </div>
+
 
         <!--journey includes screenshots of our work from each presentation-->
         <div id="journey" class="journey">
             <h2>Project Designs</h2>
             <div class="diagram">
                 <h3>MVVM Diagram</h3>
-                <img src="images/eggenda.drawio.png" alt="MVVM Diagram" class="photo">
+                <div class="show">
+                  <img src="images/eggenda.drawio.png" alt="MVVM Diagram" class="photo">
+                  <img src="images/eggenda.drawio1.png" alt="MVVM Diagram 2" class = "photo">
+                </div>
+                <div class="caption">
+                  <p>Initial Design</p>
+                  <p>Final Product</p>
+                </div>
+               
                 <br>
                 <a href="https://drive.google.com/file/d/1lVamYXlX0JxlbccysXXP61iLD1bmIosA/view?usp=sharing" target="_blank" class="view-link">View MVVM Diagram</a>
             </div>
             <br>
 
+
             <div class="diagram">
               <h3>Threaded Design Diagram</h3>
-              <img src="images/threadeddiagram.png" alt="Threaded Design Diagram" class="photo">
+              <div class="show">
+                <img src="images/threadeddiagram.png" alt="Threaded Design Diagram" class="photo">
+                <img src="images/threadeddiagram2.png" alt="Threaded Design Diagram 2" class="photo">
+              </div>
+              <div class="caption">
+                <p>Initial Design</p>
+                <p>Final Product</p>
+              </div>
+             
               <br>
               <a href="https://drive.google.com/file/d/1u1JterZDg9C0hEv9lHTJZT3xSzyCux6n/view?usp=sharing" target="_blank" class="view-link">View Threaded Design Diagram</a>
           </div>
           <br>
 
+
             <div class="figma">
-                <h3>Figma App Layout</h3>
+                <h3>Initial Figma App Layout</h3>
                 <div class="figma-photos">
                      <img src="images/figma1.png" alt="Figma home design" class="photo">
                     <img src="images/figma2.png" alt="Figma Game Design" class="photo">
                 </div>
             </div>
 
+
         </div>
+
 
         <!--summary includes a list of what we implemented for each presentation-->
         <div id="summaries" class="summary">
@@ -248,11 +333,12 @@ go play some fun games to relax! </p>
                   <ul>
                     <li>Home page: Developed the basic logic behind our final product for the egg hatching and quest board.</li>
                     <li>Settings: Built user profile settings and change the language of the app.</li>
-                    <li>Game: Implement a battle system that is easy for the user to understand. The game 
+                    <li>Game: Implement a battle system that is easy for the user to understand. The game
                    also needs the user to develop strategies and presents difficulties, allowing for a challenging but fun battle.</li>
                   </ul>
                 <br>
             </div>
+
 
             <div class="pres2">
                <h3>Show and Tell 2</h3>
@@ -265,26 +351,18 @@ go play some fun games to relax! </p>
                   <li>Login/Create account: Allow users to login to a previously created account or create a new account to the database</li>
                 </ul>
 
-                <h3>Plans for final presentation</h3>
+
+                <h3>Final presentation</h3>
+                <p>For our final presentation, we finalized the features we are implementing, and ensured that previous implementations now work as according to plan.</p>
                 <ul>
-                  <li>Add information including for bosses, sort/filtering functions</li>
-                  <li>Display top users with the most gained xp from completing tasks</li>
-                  <li>Add backgrounds for pets, boss sprites</li>
-                  <li>Notification when 10 minutes are left for tasks, and to group tasks together by quests</li>
-                  <li>Add music that changes between different parts of the app</li>
-                  <li>Gain exp from completed quests/tasks to egg hatching, rarity of different pets, different randomness for which pets and be hatched</li>
-                  <li>Set up database to not require foreign key</li>
-                  <li>Add tutorial for game, slide show or interactive and make more game stages</li>
-                  <li>Save the shortest turns spend for each stage</li>
+                  <li>Home Page: Implement quest and task screens, gain experience points on completing taks and quests, added functionality to quests/tasks, notifications when deadline is near and when egg is ready to hatch</li>
+                  <li>Game: Tutorial for game, implement pets and game, choosing of a pet and stage, modular design for pet/stage/tutorial class</li>
+                  <li>Task entry database: Place list view updates on UI threads, set up so doesn't require foreign key and group tasks by quests</li>
+                  <li>User database: Add ranking fragment to view users ordered by points</li>
+                  <li>General coding: Resolve warnings and clean up code, style app to match Figma design as closely as possible</li>
                 </ul>
             </div>
-
-            <div class="final">
-               <h2>Final project</h2>
-               <p>Summary</p>
-               <p>conclusion</p>
-            </div>
         </div>
-    </main> 
+    </main>
 </body>
 </html>
